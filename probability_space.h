@@ -12,7 +12,7 @@ constexpr double EPSILON = 1e-9;
 /**
  * @brief
  * 
- * @tparam T The type of outcomes in the probability space
+ * @tparam T The type of outcomes in the probability space.
  */
 template <typename T>
 class ProbabilitySpace {
