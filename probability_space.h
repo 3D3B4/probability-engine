@@ -20,7 +20,13 @@ private:
     std::map<T, double> space;
     std::set<T> events;
     bool ignoreUnknown = false;
-
+    
+    /**
+     * @brief Get the keys of the given mapping.
+     *
+     * @param pSpace A mapping from type T to double.
+     * @return A set containing the domain of the mapping.
+     */
     static std::set<T> getKeys(const std::map<T, double>& pSpace) {
 	std::set<T> result;
 	std::transform(pSpace.begin(), pSpace.end(),
